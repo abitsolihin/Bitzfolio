@@ -8,7 +8,7 @@ import box from '../img/box.svg'
 const Projects = () => {
     return (
         <div className="title relative flex justify-center flex-col w-full items-center">
-            <img className='box1 absolute -right-32 bottom-72 blur-sm' src={box} alt="box" />
+            <img className='box1 absolute -right-32 bottom-72 blur-sm lg:-right-72 lg:bottom-20' src={box} alt="box" />
             <img className='circle1 absolute w-[128px] blur-sm top-32 -left-32' src={circle} alt="circle" />
             <div className="wrapper flex flex-col items-center gap-2">
                 <h1 className="text-[24px] text-center">
