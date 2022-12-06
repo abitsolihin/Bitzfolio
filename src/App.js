@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
+import Project from './Pages/Project';
 
 function App() {
   return (
@@ -8,6 +9,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/project" element={<Project/>}>
+          
+        </Route>
       </Routes>
     </>
   );

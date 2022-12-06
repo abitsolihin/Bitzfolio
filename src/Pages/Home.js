@@ -24,14 +24,14 @@ const Home = () => {
   }, [])
   return (
     <main typeof='content' className=" relative w-screen pt-[70px] text-white overflow-hidden">
-      <section data-aos="fade-up" className="flex relative flex-col lg:flex-row-reverse h-screen lg:h-[80vh] px-5 lg:px-[170px]">
+      <section id='home' data-aos="fade-up" className="flex relative flex-col lg:flex-row-reverse h-screen lg:h-[80vh] px-5 lg:px-[170px]">
         <img className='box1 absolute -bottom-64 -left-72 blur-sm' src={box} alt="box" />
         <img className="absolute -top-10 -right-12 -z-10 lg:hidden" src={bgblur} alt="bitzfolio" />
         <img className="absolute -bottom-12 -left-32 -z-10 blur-2xl lg:hidden" src={bgblur2} alt="bitzfolio" />
         <div className="left h-[40%] lg:h-full lg:w-3/6 lg:flex lg:justify-center">
           <div className="image relative flex items-center justify-center">
             <img data-aos="fade-in" className="w-[200px] lg:w-[70%]" src={profile} alt="bitzfolio" />
-            <img data-aos="fade-left" data-aos-delay="100" className="w-[64px] absolute bottom-0 right-6 lg:-right-2 lg:w-[128px]" src={arrow} alt="arrow" />
+            <img data-aos="fade-left" data-aos-offset="0" data-aos-delay="100" className="w-[64px] absolute bottom-0 right-6 lg:-right-2 lg:w-[128px]" src={arrow} alt="arrow" />
             <img data-aos="fade-right" data-aos-delay="50" className="w-[86px] absolute top-10 -left-4 lg:top-32 lg:-left-8 lg:w-[100px]" src={arrow2} alt="arrow" />
             <img className="absolute -top-20 -rotate-12 -right-12 -z-10 hidden lg:flex" src={bgblur} alt="bitzfolio" />
             <img className="absolute -bottom-12 -left-32 -z-10 blur-2xl hidden lg:-bottom-48 lg:-left-32 lg:w-[400px] lg:flex" src={bgblur2} alt="bitzfolio" />
@@ -65,7 +65,7 @@ const Home = () => {
               </a>
             </li>
           </div>
-          <div data-aos="fade-in" data-aos-delay="450" className="button py-4 group">
+          <div data-aos="fade-right" data-aos-delay="450" className="button py-4 group">
             <NavLink className="wrapper relative px-7 py-1 flex items-center justify-center">
               <img className="absolute bg-transparent group-hover:bg-gradient-to-br group-hover:from-[#FF1E1E] group-hover:to-[#FF9900] rounded-md duration-200" src={border} alt="border" loading="lazy" />
               <h1 className="bg-gradient-to-br from-[#FF1E1E] to-[#FF9900] bg-clip-text text-transparent group-hover:text-white z-20 ">Contact</h1>
@@ -73,13 +73,13 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section data-aos="fade-up" className="flex px-5 flex-col lg:flex-row h-screen w-full">
+      <section id='about' data-aos="fade-up" className="flex px-5 flex-col lg:flex-row h-screen w-full">
         <Tools />
       </section>
-      <section data-aos="fade-up" className="flex px-5 flex-col lg:flex-row w-full">
+      <section id='projects' data-aos="fade-up" className="flex px-5 flex-col lg:flex-row w-full">
         <Projects />
       </section>
-      <section data-aos="fade-up" className='w-full'>
+      <section id='contact' data-aos="fade-up" className='w-full'>
         <Contact />
       </section>
       <section data-aos="fade-up" className='w-full'>
