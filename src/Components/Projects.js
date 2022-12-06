@@ -16,8 +16,8 @@ const Projects = () => {
                 </h1>
                 <img src={line} alt="bitzfolio" loading="lazy" />
             </div>
-            <div className="grid grid-cols-1 grid-rows-6 lg:grid-cols-2 lg:grid-rows-3 mt-10 gap-8">
-                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4">
+            <div className="grid grid-cols-1 grid-rows-3 lg:grid-cols-2 lg:grid-rows-3 mt-10 gap-8">
+                <div className="group items w-[275px] h-[255px] hidden lg:block bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4 ">
                     <div className="img flex justify-center w-full h-[60%] after:hover:duration-200">
                         <img className="group-hover:scale-[1.15] group-hover:-translate-x-6 duration-200 group-hover:-translate-y-5 " src={project} alt="bitzfolio" />
                     </div>
@@ -33,7 +33,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4">
+                <div className="group items w-[275px] h-[255px] hidden lg:block bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4 ">
                     <div className="img flex justify-center w-full h-[60%] after:hover:duration-200">
                         <img className="group-hover:scale-[1.15] group-hover:-translate-x-6 duration-200 group-hover:-translate-y-5 " src={project} alt="bitzfolio" />
                     </div>
@@ -49,7 +49,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4">
+                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4 ">
                     <div className="img flex justify-center w-full h-[60%] after:hover:duration-200">
                         <img className="group-hover:scale-[1.15] group-hover:-translate-x-6 duration-200 group-hover:-translate-y-5 " src={project} alt="bitzfolio" />
                     </div>
@@ -65,7 +65,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4">
+                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4 ">
                     <div className="img flex justify-center w-full h-[60%] after:hover:duration-200">
                         <img className="group-hover:scale-[1.15] group-hover:-translate-x-6 duration-200 group-hover:-translate-y-5 " src={project} alt="bitzfolio" />
                     </div>
@@ -81,7 +81,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4">
+                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4 ">
                     <div className="img flex justify-center w-full h-[60%] after:hover:duration-200">
                         <img className="group-hover:scale-[1.15] group-hover:-translate-x-6 duration-200 group-hover:-translate-y-5 " src={project} alt="bitzfolio" />
                     </div>
@@ -97,7 +97,7 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="group items w-[275px] h-[255px] bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4">
+                <div className="group items w-[275px] h-[255px] hidden lg:block bg-[#221b1a] after:hover:blur-lg items after:content-[''] after:-left-[2px] after:-right-[2px] after:-top-[2px] after:-bottom-[2px] after:bg-gradient-to-br after:from-[#FF1E1E] after:to-[#FF9900] after:-z-10 after:absolute after:rounded-lg relative rounded-lg p-4 ">
                     <div className="img flex justify-center w-full h-[60%] after:hover:duration-200">
                         <img className="group-hover:scale-[1.15] group-hover:-translate-x-6 duration-200 group-hover:-translate-y-5 " src={project} alt="bitzfolio" />
                     </div>
@@ -113,6 +113,9 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="container flex items-center justify-center my-4 see-more w-full">
+                <NavLink className="button-gradient" to="/projects">See more...</NavLink>
             </div>
         </div>
     );

@@ -17,6 +17,7 @@ body {
   box-sizing: border-box;
 
   margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,4 +26,16 @@ body {
 
 code {
   font-family: 'Poppins', sans-serif;
+}
+.button-gradient {
+  margin-top: 20px;
+  padding: 4px 15px;
+  border: 2px solid transparent;
+  background: linear-gradient(#221b1a, #221b1a) padding-box, linear-gradient(to right, red, orange) border-box;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.button-gradient:hover {
+  background: linear-gradient(to bottom right, red, orange) border-box;
+  scale: 1.1;
 }

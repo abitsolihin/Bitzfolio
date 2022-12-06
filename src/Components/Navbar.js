@@ -5,11 +5,20 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
+    const [colorChange, setColorChange] = useState(false);
+    const changeNavbarcolor = () => {
+        if (window.scrollY > 100) {
+            setColorChange(true)
+        } else {
+            setColorChange(false)
+        }
+    }
+    window.addEventListener('scroll', changeNavbarcolor)
     return (
-        <>
-            <nav className={(navbarOpen ? "fixed z-10 flex flex-wrap items-center justify-between px-3 md:px-[170px] pt-3 bg-[#221B1A] w-full" : "fixed z-10 flex flex-wrap items-center justify-between px-3 md:px-[170px] pt-3 bg-transparent w-full ")} >
+        <header>
+            <nav className={(navbarOpen ? "fixed z-10 flex flex-wrap items-center justify-between px-3 md:px-[170px] pt-3 bg-[#221B1A] left-0 right-0 top-0 bottom-0" : "fixed z-10 flex flex-wrap items-center justify-between px-3 md:px-[170px] pt-3 bg-transparent w-full ") + (colorChange ? "bg-[#221b1a]" : "bg-[#221b1a]/0")} >
                 <div className="container px-4 lg:px-0 mx-auto flex flex-wrap md:flex-none items-center justify-between">
-                    <div className="w-full relative flex justify-start lg:w-auto lg:static lg:block lg:justify-start">
+                    <div className="w-full relative flex justify-start lg:w-auto lg:static lg:flex lg:items-center lg:justify-start">
                         <a className="text-sm font-bold leading-relaxed inline-block py-2 w-[128px] lg:w-[156px] whitespace-nowrap uppercase text-white" href="#pablo">
                             <img src={logo} alt="bitzfolio" />
                         </a>
@@ -20,8 +29,8 @@ const Navbar = () => {
                             <i className="fas fa-bars"><img src={menu} alt="menu" width={28} /></i>
                         </button>
                     </div>
-                    <div className={(navbarOpen ? "lg:flex flex-grow items-center justify-start md:flex-1 duration-200 opacity-100 h-[200px]" :
-                        "lg:flex flex-grow items-center justify-start md:flex-1 duration-200 opacity-0 h-0")}
+                    <div className={(navbarOpen ? "lg:flex flex-grow items-center justify-start md:flex-1 duration-200 opacity-100 h-[160px]" :
+                        "lg:flex flex-grow items-center justify-start md:flex-1 opacity-0 md:opacity-100 h-0")}
                         id="example-navbar-danger">
                         <ul className="flex flex-col lg:flex-row list-none  text-white gap-2 lg:gap-8 lg:ml-auto py-3">
                             <li className="nav-item">
@@ -40,7 +49,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
-        </>
+        </header>
     )
 }
 
