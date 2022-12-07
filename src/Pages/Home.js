@@ -64,7 +64,7 @@ const Home = () => {
                 <img src={tiktok} alt="tiktok" width={32} />
               </a>
             </li>
-          </>
+          <ul/>
           <div data-aos="fade-right" data-aos-delay="450" className="button py-4 group">
             <NavLink className="wrapper relative px-7 py-1 flex items-center justify-center">
               <img className="absolute bg-transparent group-hover:bg-gradient-to-br group-hover:from-[#FF1E1E] group-hover:to-[#FF9900] rounded-md duration-200" src={border} alt="border" loading="lazy" />
