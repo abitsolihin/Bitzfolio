@@ -43,7 +43,7 @@ const Home = () => {
           </h2>
           <h1 data-aos="fade-right" data-aos-delay="100" className="text-[32px] lg:text-[42px] bg-gradient-to-br from-[#FF1E1E] to-[#FF9900] bg-clip-text text-transparent font-bold">Front-End Developer</h1>
           <p data-aos="fade-right" data-aos-delay="150" className="text-[14px] lg:text-[16px] text-[#c8c8c8]">I Design delightful Products & Code Web. I can help everyone build their business. It's such a happiness for me. So, let me help you !</p>
-          <div data-aos="fade-right" data-aos-delay="200" className="icon flex items-center gap-4 list-none py-1">
+          <ul data-aos="fade-right" data-aos-delay="200" className="icon flex items-center gap-4 list-none py-1">
             <li data-aos="fade-right" data-aos-delay="250">
               <a href="/">
                 <img id='facebook' src={facebook} alt="facebook" width={32} />
@@ -64,7 +64,7 @@ const Home = () => {
                 <img src={tiktok} alt="tiktok" width={32} />
               </a>
             </li>
-          </div>
+          </>
           <div data-aos="fade-right" data-aos-delay="450" className="button py-4 group">
             <NavLink className="wrapper relative px-7 py-1 flex items-center justify-center">
               <img className="absolute bg-transparent group-hover:bg-gradient-to-br group-hover:from-[#FF1E1E] group-hover:to-[#FF9900] rounded-md duration-200" src={border} alt="border" loading="lazy" />

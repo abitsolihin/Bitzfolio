@@ -40,3 +40,9 @@ code {
   background: linear-gradient(to bottom right, red, orange) border-box;
   scale: 1.1;
 }
+.content__project{
+    border: 2px solid transparent;
+  background: linear-gradient(#221b1a, #221b1a) padding-box, linear-gradient(to bottom right, #FF1E1E, #FF9900) border-box;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
