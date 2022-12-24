@@ -10,7 +10,7 @@ import arrow from '../img/arrow1.svg';
 import arrow2 from '../img/arrow2.svg';
 import bgblur from '../img/Vector 1.svg';
 import bgblur2 from '../img/Vector 2.svg';
-import profile from '../img/profile.png';
+import profile from '../img/profile.webp';
 import Tools from '../Components/tools';
 import Projects from '../Components/Projects';
 import Contact from '../Components/Contact';
