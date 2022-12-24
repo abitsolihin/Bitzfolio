@@ -30,7 +30,7 @@ const Home = () => {
         <img className="absolute -bottom-12 -left-32 -z-10 blur-2xl lg:hidden" src={bgblur2} alt="bitzfolio" />
         <div className="left h-[40%] lg:h-full lg:w-3/6 lg:flex lg:justify-center">
           <div className="image relative flex items-center justify-center">
-            <img data-aos="fade-in" className="w-[200px] lg:w-[70%]" src={profile} alt="bitzfolio" loading='lazy' />
+            <img data-aos="fade-in" className="w-[200px] lg:w-[70%]" src={profile} alt="bitzfolio" />
             <img data-aos="fade-left" data-aos-offset="0" data-aos-delay="100" className="w-[64px] absolute bottom-0 right-6 lg:-right-2 lg:w-[128px]" src={arrow} alt="arrow" loading='lazy' />
             <img data-aos="fade-right" data-aos-delay="50" className="w-[86px] absolute top-10 -left-4 lg:top-32 lg:-left-8 lg:w-[100px]" src={arrow2} alt="arrow" loading='lazy' />
             <img className="absolute -top-20 -rotate-12 -right-12 -z-10 hidden lg:flex" src={bgblur} alt="bitzfolio" loading='lazy' />
