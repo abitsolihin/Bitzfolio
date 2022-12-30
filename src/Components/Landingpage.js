@@ -21,7 +21,7 @@ const Landingpage = () => {
           return (
             <div key={id} className="card group w-full h-full text-white hover:scale-105 hover:shadow-md hover:shadow-orange-600" >
               <div className="image p-3 h-[65%]">
-                <img className="group-hover:scale-110 group-hover:-translate-y-5 group-hover:-translate-x-3 duration-200 delay-75" src={`http://localhost:8000/${image}`} alt="bitzfolio" />
+                <img className="group-hover:scale-110 group-hover:-translate-y-5 group-hover:-translate-x-3 duration-200 delay-75" src={`https://bitzfolio-api-express-js.vercel.app/${image}`} alt="bitzfolio" />
               </div>
               <div className="content h-[35%] w-full p-2 flex items-center">
                 <div className="title w-3/6">
