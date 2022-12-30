@@ -65,7 +65,7 @@ const Home = () => {
               </a>
             </li>
           </ul>
-          <div data-aos="fade-right" data-aos-delay="450" className="button py-4 group">
+          <div data-aos="fade-right" data-aos-delay="450" data-aos-offset="0" className="button py-4 group">
             <NavLink className="wrapper relative px-7 py-1 flex items-center justify-center">
               <img className="absolute bg-transparent group-hover:bg-gradient-to-br group-hover:from-[#FF1E1E] group-hover:to-[#FF9900] rounded-md duration-200" src={border} alt="border" loading="lazy" />
               <h1 className="bg-gradient-to-br from-[#FF1E1E] to-[#FF9900] bg-clip-text text-transparent group-hover:text-white z-20 ">Contact</h1>

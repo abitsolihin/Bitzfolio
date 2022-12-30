@@ -6,7 +6,7 @@ const Uiux = () => {
   const [projects, setProject] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/projects/category/uiux').then((res) => {
+    axios.get('https://bitzfolio-api-express-js.vercel.app/projects/category/uiux').then((res) => {
       setProject(res.data)
     })
       .catch((err) => {

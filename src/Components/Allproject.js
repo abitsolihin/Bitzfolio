@@ -6,7 +6,7 @@ const Allproject = () => {
   const [projects, setProject] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/projects').then((res) => {
+    axios.get('https://bitzfolio-api-express-js.vercel.app/projects').then((res) => {
       setProject(res.data)
     })
       .catch((err) => {

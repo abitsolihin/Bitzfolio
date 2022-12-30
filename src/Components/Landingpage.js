@@ -6,7 +6,7 @@ const Landingpage = () => {
   const [projects, setProject] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/projects/category/Landing%20Page').then((res) => {
+    axios.get('https://bitzfolio-api-express-js.vercel.app/projects/category/Landing%20Page').then((res) => {
       setProject(res.data)
     })
       .catch((err) => {

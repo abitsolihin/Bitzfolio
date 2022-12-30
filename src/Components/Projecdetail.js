@@ -7,7 +7,7 @@ const Projecdetail = () => {
     const params = useParams();
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/projects/${params.id}`).then((res) => {
+    axios.get(`https://bitzfolio-api-express-js.vercel.app/projects/${params.id}`).then((res) => {
       setProject(res.data)
     })
       .catch((err) => {
@@ -33,7 +33,7 @@ const Projecdetail = () => {
                     
             </div>
             <div className="right__content w-full flex justify-center items-center">
-                <img className='w-full' src={`http://localhost:8000/${projects.image}`} alt="" />
+                <img className='w-full' src={`https://bitzfolio-api-express-js.vercel.app/${projects.image}`} alt="" />
             </div>
         </div>
       </div>

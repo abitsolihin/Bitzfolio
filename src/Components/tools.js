@@ -17,7 +17,6 @@ const Tools = () => {
   return (
     <div className="title relative flex justify-center flex-col w-full items-center lg:px-[170px]">
       <img className='box2 absolute -bottom-48 right-[200px] blur-xs w-[100px] lg:hidden' src={box} alt="box" />
-      <img className='circle1 absolute w-[128px] blur-sm -right-20 -bottom-8' src={circle} alt="circle" />
       <div className="wrapper w-[70%] flex flex-col items-center gap-2">
         <h1 className="text-[24px] text-center">
           The <span className="bg-gradient-to-br from-[#FF1E1E] to-[#FF9900] bg-clip-text text-transparent">Language</span> And <br /> <span className="bg-gradient-to-br from-[#FF1E1E] to-[#FF9900] bg-clip-text text-transparent">Tools</span> I use
