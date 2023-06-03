@@ -23,8 +23,8 @@ const Allproject = () => {
               <div className="image p-3 flex-1 flex items-center">
                 <img className="sm:group-hover:scale-110 sm:group-hover:-translate-y-5 sm:group-hover:-translate-x-3 duration-200 delay-75" src={`https://bitzfolio-api-express-js.vercel.app/${image}`} alt="bitzfolio" />
               </div>
-              <div className="content flex-1 w-full p-2 flex sm:flex-row flex-col items-center">
-                <div className="title w-3/6 text-center">
+              <div className="content flex-1 w-full p-2 flex sm:flex-row flex-col items-center justify-end">
+                <div className="title md:w-3/6 w-full text-center">
                   <h1 className='text-sm md:text-base lg:text-xl font-semibold md:group-hover:scale-110 lg:group-hover:scale-125 sm:group-hover:-translate-y-4 sm:group-hover:translate-x-4 duration-200 delay-100'>{title}</h1>
                   <p className='text-xs md:text-sm lg:text-sm text-gray-300 md:group-hover:scale-110 lg:group-hover:scale-125 sm:group-hover:-translate-y-4 sm:group-hover:translate-x-4 duration-200 delay-150'>{kategori}</p>
                 </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import axios from 'axios';
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
+import {BiArrowBack} from 'react-icons/bi'
 
 const Projecdetail = () => {
     const [projects, setProject] = useState([]);
@@ -15,11 +16,14 @@ const Projecdetail = () => {
       })
   }, [params.id]);
   return (
-    <main className='w-full h-screen flex items-center justify-center px-[20px] md:px-[170px] pt-20 relative'>
+    <main className='w-full h-screen flex items-center justify-center px-[20px] md:px-[120px] pt-20 relative'>
       <div className='absolute h-[300px] w-[150px] bg-red-500 z-[-1] -top-[100px] rounded-full bg-gradient-to-br from-[#FF1E1E] to-[#FF9900]  blur-md left-0'/>
       <div className='absolute h-[300px] w-[300px] bg-red-500 z-[-1]  rounded-full bg-gradient-to-br from-[#FF1E1E] to-[#FF9900]  blur-3xl right-10 bottom-0'/>
       <div className="container w-full  h-[90%] flex flex-col gap-4">
-        <div className="content__project border-2 rounded-2xl px-10 h-full bg-[#221b1a] overflow-hidden flex flex-col-reverse lg:flex-row flex-1">
+      <Link className='flex items-center space-x-1 text-white' to={"/project/all"}><BiArrowBack/>Back To Project</Link>
+        <div className="content__project overflow-scroll border-2 rounded-2xl px-10 h-full bg-[#221b1a] md:overflow-hidden flex flex-col-reverse lg:flex-row flex-1">
+          <div className="back_button">
+          </div>
             <div className="left__content w-full h-full flex flex-col justify-center">
                 <article>
                     <h1 className='text-white text-3xl lg:text-4xl font-bold'>{projects.title}</h1>

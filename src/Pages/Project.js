@@ -4,8 +4,8 @@ import { NavLink, Outlet } from 'react-router-dom'
 const Project = () => {
   
   return (
-    <main className='w-full h-screen flex items-center justify-center px-[20px] md:px-[170px] pt-20 relative'>
-      <div className='absolute h-[300px] w-[150px] bg-red-500 z-[-1] -top-[100px] rounded-full bg-gradient-to-br from-[#FF1E1E] to-[#FF9900]  blur-md left-0'/>
+    <main className='w-full h-screen flex items-center justify-center px-[20px] md:px-[120px] pt-20 relative'>
+      <div className='absolute h-[300px] w-[150px] bg-red-500 z-[-1] md:-top-20 rounded-full bg-gradient-to-br from-[#FF1E1E] to-[#FF9900]  blur-md md:-left-10 right-0 -top-20'/>
       <div className='absolute h-[300px] w-[300px] bg-red-500 z-[-1]  rounded-full bg-gradient-to-br from-[#FF1E1E] to-[#FF9900]  blur-3xl right-10 bottom-0'/>
       <div className="container  h-[90%] flex flex-col gap-4">
         <div className="links">
