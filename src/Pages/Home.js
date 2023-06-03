@@ -24,7 +24,7 @@ const Home = () => {
   }, [])
   return (
     <main typeof='content' className=" relative w-screen pt-[70px] text-white overflow-hidden">
-      <section id='home' data-aos="fade-up" className="flex relative flex-col lg:flex-row-reverse h-screen lg:h-[80vh] px-5 lg:px-[120px]">
+      <section id='home' data-aos="fade-up" className="flex relative flex-col lg:flex-row-reverse h-full lg:h-[80vh] px-5 lg:px-[120px]">
         <img className='box1 absolute -bottom-64 -left-72 blur-sm' src={box} alt="box" />
         <img className="absolute -top-10 -right-12 -z-10 lg:hidden" src={bgblur} alt="bgblur" />
         <img className="absolute -bottom-12 -left-32 -z-10 blur-2xl lg:hidden" src={bgblur2} alt="bgblur" />
@@ -73,16 +73,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id='about' data-aos="fade-up" className="flex px-5 flex-col lg:flex-row h-screen w-full">
+      <section id='about' data-aos="fade-up" className="flex px-5 flex-col mt-20 lg:flex-row h-full w-full">
         <Tools />
       </section>
-      <section id='projects' data-aos="fade-up" className="flex px-5 flex-col lg:flex-row w-full">
+      <section id='projects' data-aos="fade-up" className="flex px-5 mt-20 flex-col lg:flex-row h-full w-full">
         <Projects />
       </section>
-      <section id='contact' data-aos="fade-up" className='w-full'>
+      <section id='contact' data-aos="fade-up" className='w-full h-full'>
         <Contact />
       </section>
-      <section data-aos="fade-up" className='w-full'>
+      <section data-aos="fade-up" className='w-full h-full'>
         <Footer />
       </section>
     </main>
