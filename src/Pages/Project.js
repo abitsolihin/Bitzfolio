@@ -4,7 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 const Project = () => {
   
   return (
-    <main className='w-full h-screen flex items-center justify-center px-[170px] pt-20 relative'>
+    <main className='w-full h-screen flex items-center justify-center px-[20px] md:px-[170px] pt-20 relative'>
       <div className='absolute h-[300px] w-[150px] bg-red-500 z-[-1] -top-[100px] rounded-full bg-gradient-to-br from-[#FF1E1E] to-[#FF9900]  blur-md left-0'/>
       <div className='absolute h-[300px] w-[300px] bg-red-500 z-[-1]  rounded-full bg-gradient-to-br from-[#FF1E1E] to-[#FF9900]  blur-3xl right-10 bottom-0'/>
       <div className="container  h-[90%] flex flex-col gap-4">

@@ -15,22 +15,22 @@ const Allproject = () => {
   }, []);
   return (
     <div className='w-full h-full p-2'>
-      <div className="container w-full h-full grid grid-cols-4 gap-4">
+      <div className="container w-full h-full grid lg:grid-cols-3 grid-cols-2 xl:grid-cols-4 gap-4 auto-rows-max">
         {projects.map((values) => {
           const { title, kategori, image, id } = values
           return (
-            <div key={id} className="card group w-full h-full text-white hover:scale-105 hover:shadow-md hover:shadow-orange-600" >
-              <div className="image p-3 h-[65%]">
-                <img className="group-hover:scale-110 group-hover:-translate-y-5 group-hover:-translate-x-3 duration-200 delay-75" src={`https://bitzfolio-api-express-js.vercel.app/${image}`} alt="bitzfolio" />
+            <div key={id} className="card group w-full h-full text-white hover:scale-105 hover:shadow-md hover:shadow-orange-600 flex flex-col" >
+              <div className="image p-3 flex-1 flex items-center">
+                <img className="sm:group-hover:scale-110 sm:group-hover:-translate-y-5 sm:group-hover:-translate-x-3 duration-200 delay-75" src={`https://bitzfolio-api-express-js.vercel.app/${image}`} alt="bitzfolio" />
               </div>
-              <div className="content h-[35%] w-full p-2 flex items-center">
-                <div className="title w-3/6">
-                  <h1 className='text-xl font-semibold group-hover:scale-125 group-hover:-translate-y-4 group-hover:translate-x-4 duration-200 delay-100'>{title}</h1>
-                  <p className='text-sm text-gray-300 group-hover:scale-125 group-hover:-translate-y-4 group-hover:translate-x-4 duration-200 delay-150'>{kategori}</p>
+              <div className="content flex-1 w-full p-2 flex sm:flex-row flex-col items-center">
+                <div className="title w-3/6 text-center">
+                  <h1 className='text-sm md:text-base lg:text-xl font-semibold md:group-hover:scale-110 lg:group-hover:scale-125 sm:group-hover:-translate-y-4 sm:group-hover:translate-x-4 duration-200 delay-100'>{title}</h1>
+                  <p className='text-xs md:text-sm lg:text-sm text-gray-300 md:group-hover:scale-110 lg:group-hover:scale-125 sm:group-hover:-translate-y-4 sm:group-hover:translate-x-4 duration-200 delay-150'>{kategori}</p>
                 </div>
-                <div className="button w-[50%] flex justify-center">
+                <div className="button w-full sm:w-[50%] flex justify-center items-center">
                   <NavLink to={`/project/detail/${id}`}>
-                  <button className='button--detail bg-gradient-to-br from-[#FF1E1E] to-[#FF9900] text-xs px-4 py-2 rounded-md  group-hover:scale-110 group-hover:translate-x-4 duration-200 delay-200'>View Detail</button>
+                  <button className='button--detail bg-gradient-to-br from-[#FF1E1E] to-[#FF9900] text-[10px] sm:text-xs px-3 py-1 sm:px-4 sm:py-2 rounded-md  sm:group-hover:scale-110 sm:group-hover:translate-x-4 duration-200 delay-200'>View Detail</button>
                   </NavLink>
                 </div>
               </div>

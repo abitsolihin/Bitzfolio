@@ -24,7 +24,7 @@ const Home = () => {
   }, [])
   return (
     <main typeof='content' className=" relative w-screen pt-[70px] text-white overflow-hidden">
-      <section id='home' data-aos="fade-up" className="flex relative flex-col lg:flex-row-reverse h-screen lg:h-[80vh] px-5 lg:px-[170px]">
+      <section id='home' data-aos="fade-up" className="flex relative flex-col lg:flex-row-reverse h-screen lg:h-[80vh] px-5 lg:px-[120px]">
         <img className='box1 absolute -bottom-64 -left-72 blur-sm' src={box} alt="box" />
         <img className="absolute -top-10 -right-12 -z-10 lg:hidden" src={bgblur} alt="bgblur" />
         <img className="absolute -bottom-12 -left-32 -z-10 blur-2xl lg:hidden" src={bgblur2} alt="bgblur" />
