@@ -39,9 +39,9 @@ const Navbar = () => {
                             className="text-white absolute right-1 h-full cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent flex flex-col justify-evenly items-center lg:hidden outline-none focus:outline-none"
                             type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}>
-                            <div className={navbarOpen ? `absolute w-6 h-[2px] bg-white transition-all rotate-90 ` : `absolute w-6 h-[2px] bg-white transition-all`}></div>
-                            <div className={navbarOpen ? `absolute w-8 h-[4px] bg-white mt-0 transition-all -rotate-45 scale-50 translate-x-[5px] translate-y-2` : `absolute w-6 h-[2px] bg-white mt-4 transition-all`}></div>
-                            <div className={navbarOpen ? `absolute w-8 h-[4px] bg-white mb-0 transition-all rotate-45 scale-50 -translate-x-[5px] translate-y-2` : `absolute w-6 h-[2px] bg-white mb-4 transition-all`}></div>
+                            <div className={navbarOpen ? `absolute w-6 h-[2px] bg-white transition-all rotate-90  ease-in-out duration-300` : `absolute w-6 h-[2px] bg-white transition-all ease-in-out duration-300`}></div>
+                            <div className={navbarOpen ? `absolute w-8 h-[4px] bg-white mt-0 transition-all -rotate-45 scale-50 translate-x-[5px] translate-y-2 ease-in-out duration-300` : `absolute w-6 h-[2px] bg-white mt-4 transition-all ease-in-out duration-300`}></div>
+                            <div className={navbarOpen ? `absolute w-8 h-[4px] bg-white mb-0 transition-all rotate-45 scale-50 -translate-x-[5px] translate-y-2 ease-in-out duration-300` : `absolute w-6 h-[2px] bg-white mb-4 transition-all ease-in-out duration-300`}></div>
                         </button>
                     </div>
                     <div className={(navbarOpen ? "lg:flex flex-grow items-center justify-start md:flex-1 transition-all h-[160px] mb-4 " :
