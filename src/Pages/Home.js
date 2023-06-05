@@ -82,7 +82,7 @@ const Home = () => {
       <section id='contact' data-aos="fade-up" className='w-full h-full'>
         <Contact />
       </section>
-      <section data-aos="fade-up" className='w-full h-full'>
+      <section className='w-full h-full'>
         <Footer />
       </section>
     </main>

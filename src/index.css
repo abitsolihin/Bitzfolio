@@ -30,7 +30,7 @@ code {
 }
 .button-gradient {
   margin-top: 20px;
-  padding: 4px 15px;
+  padding: 6px 18px;
   border: 2px solid transparent;
   background: linear-gradient(#221b1a, #221b1a) padding-box, linear-gradient(to right, red, orange) border-box;
   border-radius: 4px;
